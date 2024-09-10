@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_big_bg4"
+        android:fitsSystemWindows="true"
+        android:foreground="@color/white_20"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="成绩管理"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:id="@+id/iv_person"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:padding="6dp"
+                android:src="@mipmap/ic_person"
+                android:tint="#333333"></ImageView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#f1f1f1"></View>
+
+        <LinearLayout
+            android:id="@+id/ll_top1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_content"
+                android:hint="输入学号"
+                android:inputType="number"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="10dp"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#999999"
+                android:textSize="12sp"></EditText>
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_content"
+                android:hint="输入姓名"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="10dp"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#999999"
+                android:textSize="12sp"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_top2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/et_course"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_content"
+                android:hint="输入课程"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="10dp"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#999999"
+                android:textSize="12sp"></EditText>
+
+            <EditText
+                android:id="@+id/et_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_content"
+                android:hint="输入成绩"
+                android:inputType="number"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="10dp"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#999999"
+                android:textSize="12sp"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/bg_button_login_yes"
+                android:inputType="number"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="10dp"
+                android:text="确认添加"
+                android:textColor="@color/white"
+                android:textSize="12sp"></TextView>
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_content"
+                android:hint="输入姓名进行查询"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="10dp"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#999999"
+                android:textSize="12sp"></EditText>
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/bg_button_login_yes"
+                android:inputType="number"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="10dp"
+                android:text="确认查询"
+                android:textColor="@color/white"
+                android:textSize="12sp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/bg_button_login_yes"
+                android:inputType="number"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="10dp"
+                android:text="重置"
+                android:textColor="@color/white"
+                android:textSize="12sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="学号"
+                android:textColor="#333333"
+                android:textSize="14sp"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="名字"
+                android:textColor="#333333"
+                android:textSize="14sp"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="课程"
+                android:textColor="#333333"
+                android:textSize="14sp"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="分数"
+                android:textColor="#333333"
+                android:textSize="14sp"></TextView>
+
+            <ImageView
+                android:id="@+id/iv_tongji"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_tongji"></ImageView>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/role1"
+        android:title="角色：学生"
+        app:showAsAction="always"
+        ></item>
+    <item
+        android:id="@+id/role2"
+        android:title="角色：老师"
+        app:showAsAction="always"
+        ></item>
+</menu>

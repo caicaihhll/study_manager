@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  圆形view -->
+    <declare-styleable name="RoundView">
+        <attr name="corner_size" format="dimension" />
+    </declare-styleable>
+
+</resources>
